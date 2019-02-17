@@ -1,0 +1,18 @@
+Tipos de algoritmos de árboles de decisión.
+
+Existen varios tipos de algoritmos de arboles de decisión, los mas utilizados son:
+Algoritmo ID3:
+Es conocido como el algoritmo base y sus siglas significan Interactive Dichotomiser 3. Este algoritmo plantea una búsqueda intensa desde la raíz del árbol hasta las hojas en el espacio de los posibles árboles de decisión. Se diseña para operar sobre:
+Un universo en el que existen multitud de atributos,
+Un conjunto de entrenamiento con múltiples objetivos,
+Un árbol de decisión aceptable con bajo costo computacional.
+Su estructura básica es iterativa, se elige de manera aleatoria un conjunto de datos de entrenamiento, llamado ventana y con el se genera un árbol de decisión, luego se intenta extender esta clasificación al resto de elementos del conjunto de entrenamiento. Si la clasificación no es correcta se añaden a la ventana tales objetos y el proceso de clasificación continua.
+
+Algoritmo C4.5
+Es una extensión del ID3 y se usa normalmente como clasificador, también construye árboles de decisión usando el concepto de entropía de la información. En este algoritmo los datos de entrenamiento son aumentados con un vector C que representa la clase a la que pertenece una muestra.
+
+Otros tipo de algoritmos de árboles de decisión son:
+ACR: Arboles de Clasificación y regresión.
+CHAID: Detector automático de Chi-cuadrado de interacción.
+MARS: Extiende los árboles de decisión para manejar mejor datos numéricos.
+Árboles de Inferencia Condicional. Enfoque que utiliza pruebas no paramétricas como criterios de división, corregidos para múltiples pruebas para evitar el sobreajuste. Este enfoque se traduce en la selección de un predictor imparcial y no requiere poda.
