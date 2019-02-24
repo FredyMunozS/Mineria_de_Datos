@@ -1,0 +1,9 @@
+Ensemble Trees Overview
+Los metodos de ensamble combinan múltiples algoritmos para obtener un mejor desempeño predictivo que el que podría ofrecer un algoritmo de forma individual.
+Esta combinación de métodos exige un alto costo computacional en términos de mayor procesamiento, por lo tanto es común que se usen algoritmos de ejecución más rápida como los árboles de decisión.
+El principal problema de las técnicas de ensamble es el sobre ajuste y debe tenerse en cuenta para tomar las precauciones necesarias, por lo tanto las técnicas utilizadas para combinar los algoritmos tienden a reducir esta problemática.
+Existen varias técnicas de combinación de modelos, entre ellas:
+Bagging, su nombre proviene de la abreviatura de las palabras boostrap aggregation. Provoca una reducción en la varianza y evita el sobre ajuste. Se utiliza para conseguir combinaciones de modelos  a partir de una familia inicial. Se utiliza mayoritariamente en modelos basados en árboles de decisión pero su utilización se pude extender a cualquier familia de modelos.
+Esta técnica tiene varios pasos, el primero es construir varios grupos de datos de entrenamiento haciendo selección con repetición de los datos originales de entrenamiento. A partir de estos nuevos conjuntos se construyen nuevos modelos modelos de aprendizaje y la respuesta final se obtiene por medio de la votación de las respuestas de cada nuevo modelo cuando se trata de clasificadores o por la media cuando se tiene una regresión.
+
+Otra técnica de ensamble es el Boosting, aquí no se crean nuevos conjuntos de datos sino que se trabaja con los datos originales, se manipulan los pesos de los datos para crear modelos distintos, en cada iteración se incrementa el peso de las observaciones mal clasificadas para que en la siguiente iteración sean mas importantes y aumente la probabilidad de clasificarlos bien.
