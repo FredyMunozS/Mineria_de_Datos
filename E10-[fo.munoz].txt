@@ -1,0 +1,6 @@
+E10 - Random Forest Performance Review
+Do we Need Hundreds of Classifiers to Solve Real World Classification Problems?
+
+A medida que avanza la ciencia de computación, habilita nuevos caminos para hacer experimentos como el descrito en el paper anterior. Sin la ayuda delas nuevas tecnilogías, el procesamiento en paralelo y el big data este tipo de investigaciones no tendiran herramientas para ser desarrolladas.
+El ejercicio descrito en el documento ha destrado el poder que tienen los algoritmos de Random Forest. Ha sido muy interesante entender como se desarrolla el experimiento con un gran número de data sets y ver como se han probado mas de 100 tipos distintos de algoritmos, es alucinante imaginar la cantidad de combinaciones y cálculos que ha demandado este experimento. Como resultado tenemos entonces un ranking de los mejores algoritmos de clasificación.
+Queda sobre la mesa si este tipo de experimentos puedan servir como antesala al desarrollo de algoritmos de última generación a la construcción de un super algoritmo que consuma grandes capacidades computacionales y que permita hacer una selección automática de las rutinas, agruapaciones y clasificaciones de los datos. Probalemente no estamos lejos de ver todo lo que permitía implementar el big data, el procesamiento distribuido y los cambios de paradigma en programación y manejo de información.
