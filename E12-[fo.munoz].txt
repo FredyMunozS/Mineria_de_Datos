@@ -1,0 +1,15 @@
+Gradient Boosting Classifier vs Xtreme Gradient Boosting Clasifier (XGB)
+
+En ambos casos se trata de algoritmos que toman varios modelos de regresión débiles para ensambar un algoritmo altamente preciso, cambiando diferentes reglas.
+Inicialmente, el gradient boosting implica tres elementos:
+1.	Una función de pérdida a optimizar, usualmente se emplea el error cuadrático medio en problemas de regresión.
+2.	Un algoritmo de aprendizaje débil para hacer las regresiones. Normalmente se utiliza el algoritmo de árboles de decisión.
+3.	Un modelo de ensamble que permita reunir los algoritmos débiles minimizando la función de pérdida. Los árboles de decisión son agregados uno por uno sin cambiarlos. Los parámetros de construcción de los árboles se determinan con un procedimiento de gradiente descendente,  de esta forma se van agregando árboles con diferenes parámetros minimizando la función de pérdida.
+
+Por otro lado el XGBoost, significa Xtreme Gradient Boosting, Este algoritmo ha ganado bastante popularidad por dominar las competencias de Kaggle que tienen datos estructurados. También utiliza árboles de decisión con gradient boosting. 
+El punto clave en el rendimiento de este algoritmo es que solo acepta datos numéricos de entrada, en otro caso habrá que hacer codificaciones adecuadas.
+Algunas características clave de XGBoost son:
+1.	Penalización inteligente de árboles.
+2.	Contracción proporcional de hojas y nodos.
+3.	Parámetros de extra aleatoriedad para reducir la correlación entre los árboles.
+4.	Método de optimización de Newton.
